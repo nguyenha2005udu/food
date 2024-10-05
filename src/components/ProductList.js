@@ -3,7 +3,7 @@ import ProductCard from './ProductCard/ProductCard';
 
 function ProductList({ products }) {
   return (
-    <div style={{ display: 'flex', flexWrap: 'wrap', justifyContent: 'center' }}>
+    <div className="product-list">
       {products.map(product => (
         <ProductCard
           key={product.id}
@@ -16,5 +16,6 @@ function ProductList({ products }) {
     </div>
   );
 }
+
 
 export default ProductList;

@@ -1,0 +1,219 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+}
+/* Container cho header */
+.header-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #ffffff;
+    border-bottom: 5px solid #204ba1;
+    position: relative;
+    text-align: center;
+  }
+  
+  /* Logo và phần văn bản */
+  .header-logo {
+    display: flex;
+    align-items: center;
+  }
+  
+  .header-logo img {
+    max-height: 80px;
+    margin-right: 20px;
+    transition: transform 0.3s ease;
+  }
+  
+  /* Hiệu ứng hover cho logo */
+  .header-logo img:hover {
+    transform: scale(1.05); /* Phóng to logo nhẹ khi hover */
+  }
+  
+  /* Nội dung văn bản */
+  .header-text {
+    flex-grow: 1;
+    text-align: center;
+  }
+  
+  .header-text h1 {
+    font-size: 20px;
+    color: #ff0000; /* Màu đỏ cho Học viện */
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .header-text h2 {
+    font-size: 24px;
+    color: #0c3b97; /* Màu xanh đậm cho Viện */
+    margin-bottom: 5px;
+}  
+
+/* style cho navbar */
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #2262ab;
+    padding: 10px 20px;
+    color: #fff;
+    margin-top:10px;
+  }
+  
+/* Navbar menu */
+.navbar-menu {
+    display: flex;
+    align-items: center;
+    list-style: none;
+}
+  
+.navbar-menu li {
+    margin-left:200px;
+    gap:40px
+  }
+  
+.navbar-menu a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 16px;
+    transition: color 0.3s ease;
+  }
+  
+.navbar-menu a:hover {
+    color: #ffcc00;
+  }
+  
+.navbar-icons {
+    display: flex;
+    align-items: center;
+  }
+  
+.navbar-icons img {
+    height: 25px;
+    margin: 0 10px;
+    cursor: pointer;
+    transition: transform 0.3s ease;
+  }
+  
+.navbar-icons img:hover {
+    transform: scale(1.1);
+  }
+  
+  /* Thanh tìm kiếm */
+.search-bar {
+    display: flex;
+    align-items: center;
+    position: relative;
+  }
+  
+.search-input {
+    color: #000000;
+    height: 30px;
+    border-radius: 15px;
+    border: none;
+    padding: 0 15px;
+    outline: none;
+    transition: width 0.3s ease;
+    width: 0;
+    opacity: 0;
+  }
+  
+.search-input:focus {
+    width: 200px;
+    opacity: 1;
+  }
+  
+.search-icon {
+    position: absolute;
+    right: 10px;
+    cursor: pointer;
+    color: #fff;
+  }
+  
+.search-icon:hover {
+    color: #ffcc00;
+}
+
+
+/* Style cho footer */
+footer {
+    background-color: #2661a4;
+    color: #fff;
+    padding: 40px 0;
+    margin-top: 700px;
+    transition: background-color 0.3s ease;
+  }
+  
+  
+  .footer-sections {
+    display: flex;
+    justify-content: space-around;
+    text-align: left;
+  }
+  
+  .footer-sections div {
+    width: 30%;
+  }
+  
+  .footer-about h3, .footer-contact h3, .footer-social h3 {
+    font-size: 18px;
+    margin-bottom: 10px;
+    transition: color 0.3s ease;
+  }
+  
+  .footer-about h3:hover, .footer-contact h3:hover, .footer-social h3:hover {
+    color: #ffcc00;
+  }
+  
+  .footer-about p, .footer-contact p, .footer-social a {
+    font-size: 14px;
+    margin-bottom: 8px;
+    color: #ddd;
+  }
+  
+  .footer-contact a, .footer-social a {
+    color: #fff;
+    text-decoration: none;
+    transition: color 0.3s ease, transform 0.3s ease;
+  }
+  
+  .footer-contact a:hover, .footer-social a:hover {
+    color: #ffcc00;
+    transform: scale(1.1);
+  }
+  
+  .social-link {
+    display: inline-block;
+    margin-right: 10px;
+    padding-bottom: 2px;
+    border-bottom: 2px solid transparent;
+    transition: all 0.3s ease;
+  }
+  
+  .social-link:hover {
+    color: #ffcc00;
+    border-bottom: 2px solid #ffcc00;
+    transform: translateY(-3px);
+  }
+  
+  .footer-bottom {
+    text-align: center;
+    margin-top: 20px;
+    font-size: 14px;
+    color: #fff;
+  }
+
+  
+
+
+
+
+  
+
+ 
+  
+
+  

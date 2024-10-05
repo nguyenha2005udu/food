@@ -1,13 +1,9 @@
-import './App.css';
 import React, { useState } from 'react';
-import Header from './components/Header';
-import Footer from './components/Footer';
-import Navbar from './components/Navbar';
-import CategoryButton from './components/CategoryButton/CategoryButton';
-import ProductList from './components/ProductList';
+import ProductList from '../components/ProductList';
+import CategoryButton from '../components/CategoryButton/CategoryButton';
 
-function App() {
-  const [activeCategory, setActiveCategory] = useState('ĐỒ ĂN'); // @hant State để lưu danh mục hiện tại
+const MenuPage = () => {
+  const [activeCategory, setActiveCategory] = useState('ĐỒ ĂN');
   const products = [
     // @hant Thực đơn đồ ăn
     { id: 1, title: "Bánh mì thập cẩm", priceRange: "15.000 VND - 25.000 VND", image: "bmithapcam.jpg", category: "ĐỒ ĂN" },
@@ -40,21 +36,13 @@ function App() {
     { id: 26, title: "Khô bò", priceRange: "25.000 VND - 50.000 VND", image: "khobo.jpg", category: "KHÁC" },
     { id: 27, title: "Bánh tráng", priceRange: "10.000 VND - 20.000 VND", image: "banhtrang.jpg", category: "KHÁC" },
   ];
-  // @hant Lọc sản phẩm theo danh mục
+
   const filteredProducts = products.filter(product => product.category === activeCategory);
 
   return (
     <div>
-       {/* Header */}
-      <Header />
-
-      {/* Navbar */}
-      <Navbar 
-        onCategoryChange={setActiveCategory} 
-        activeCategory={activeCategory} 
-      />
-      {/* Danh sách các nút chọn danh mục */}
-      <div style={{ display: 'flex', justifyContent: 'center', alignItems: 'center', marginBottom: '20px' }}>
+      {/* Thêm className để style dễ hơn */}
+      <div className="category-container">
         <CategoryButton
           label="ĐỒ ĂN"
           active={activeCategory === 'ĐỒ ĂN'}
@@ -72,15 +60,9 @@ function App() {
         />
       </div>
 
-      {/* Hiển thị danh sách sản phẩm theo danh mục */}
-      <div>
-        {/* <h1>{activeCategory}</h1> */}
-        <ProductList products={filteredProducts} />
-      </div>
-      {/* Footer */}
-      <Footer />
+      {/* Hiển thị sản phẩm */}
+      <ProductList products={filteredProducts} />
     </div>
   );
-}
-
-export default App;
+};
+export default MenuPage;
