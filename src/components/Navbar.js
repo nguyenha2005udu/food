@@ -4,9 +4,9 @@ const Navbar = () => {
     return (
         <nav className="navbar">
             <ul className="navbar-menu">
-                <li><a href="#">Trang chủ</a></li>
-                <li><a href="#">Thực đơn</a></li>
-                <li><a href="#">Liên hệ</a></li>
+                <li><a href="#">TRANG CHỦ</a></li>
+                <li><a href="#">THỰC ĐƠN</a></li>
+                <li><a href="#">LIÊN HỆ</a></li>
             </ul>
             <div className="navbar-icons">
                 <div className="search-bar">
