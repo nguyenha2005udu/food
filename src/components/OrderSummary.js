@@ -15,7 +15,7 @@ const OrderSummary = ({ items, onSelectAll, onDeleteProduct, isAttached }) => {
           checked={allSelected} 
           onChange={(e) => onSelectAll(e.target.checked)} 
         />
-        <h4>Chọn Tất cả ({items.length})</h4>
+        <h4>Chọn Tất Cả ({items.length})</h4>
       </label>
       <div >
         <button 
@@ -25,8 +25,8 @@ const OrderSummary = ({ items, onSelectAll, onDeleteProduct, isAttached }) => {
             Xóa
         </button>
         </div>
-      <h4>Tổng thanh toán: {total.toLocaleString()} VNĐ</h4>
-      <button className='payment' disabled={total === 0}><h3>Mua hàng</h3></button>
+      <h4 className='sum_price'>Tổng Thanh Toán: {total.toLocaleString()} VNĐ</h4>
+      <button className='payment' disabled={total === 0}><h3>THANH TOÁN</h3></button>
     </div>
   );
 };

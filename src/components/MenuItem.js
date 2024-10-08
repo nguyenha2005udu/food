@@ -1,16 +1,8 @@
 import React from 'react';
 
-const MenuItem = ({ item, onQuantityChange, onSelectItem }) => {
+const MenuItem = ({ item, onQuantityChange, onSelectItem ,onDeleteProduct}) => {
   return (
-    <div className='container_product'>
-      <label>
-        <input 
-          type="checkbox" 
-          checked={item.selected} 
-          onChange={() => onSelectItem(item.id)} 
-        />
-        <h2>RFO</h2>
-      </label>
+    
       <div className='products'>
         <label>
           <input 
@@ -36,10 +28,10 @@ const MenuItem = ({ item, onQuantityChange, onSelectItem }) => {
         </div>
         <div className="content_detailed03">
           <h3>Thao Tác</h3>
-          <button className="delete-btn" onClick={() => onSelectItem(item.id)}>Xóa</button>
+          <button className="delete-btn" onClick={() => onDeleteProduct(item.id)}>Xóa</button>
         </div>
       </div>
-    </div>
+    
   );
 };
 
